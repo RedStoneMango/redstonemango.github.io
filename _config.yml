@@ -1,5 +1,6 @@
 url: "https://redstonemango.github.io"
 theme: jekyll-theme-cayman
+description: Test
 
 custom_buttons:
   - text: Visit my GitHub
