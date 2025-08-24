@@ -1,5 +1,5 @@
 ---
-title: Welcome to RedStoneMango's Homepage
+title: RedStoneMango | Homepage
 ---
 
 # RedStoneMango
