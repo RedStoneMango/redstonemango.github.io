@@ -1,6 +1,6 @@
 url: "https://redstonemango.github.io"
 theme: jekyll-theme-cayman
-description: ~ # Explicitly unset this to avoid " | DESCRIPTION" in website title
+description: "" # Explicitly nothing to avoid " | DESCRIPTION" in website title
 
 custom_buttons:
   - text: Visit my GitHub
