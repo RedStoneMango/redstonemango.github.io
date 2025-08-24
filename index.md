@@ -6,7 +6,7 @@ layout: default
 
 # 🥭 Hi! I'm **RedStoneMango**
 
- I am a Java and Bash developer, Linux enthusiast, and occasional over-engineer of tiny tools. I enjoy building useful things from scratch and exploring the finer points of system scripting and application design.
+ I am a German Java and Bash developer, Linux enthusiast, and occasional over-engineer of tiny tools. I enjoy building useful things from scratch and exploring the finer points of system scripting and application design.
 
 ---
 
@@ -28,12 +28,12 @@ I maintain and tinker with a range of small to mid-sized projects. Most of them 
 - 🖥️ Desktop applications  
 - 📜 Command-line tools  
 
-Here, you can find my current long-term projects:
+**Here, you can find my current long-term projects:**
 
 | Project       | Info                                                    | Repository                                                     |
 |---------------|---------------------------------------------------------|----------------------------------------------------------------|
 | **Mango-Utils** | Free, open-source collection of lightweight Java utility classes | <a href="https://github.com/RedStoneMango/Mango-Utils" target="_blank" rel="noopener noreferrer">Mango-Utils</a> |
-| **Mangrypt**  | Encryption application to protect sensitive user data   | <a href="https://github.com/RedStoneMango/Mangrypt" target="_blank" rel="noopener noreferrer">Mangrypt</a> |
+| **Mangrypt**  | Encryption application to protect sensitive user data   | <a href="https://github.com/RedStoneMango/Mangrypt" target="_blank" rel="noopener noreferrer">Mangrypt</a> _(Not yet accessible; stay tuned)_ |
 
 ---
 
