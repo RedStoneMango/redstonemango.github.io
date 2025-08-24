@@ -32,8 +32,8 @@ Here, you can find my current long-term projects:
 
 | Project       | Info                                                    | Repository                                                     |
 |---------------|---------------------------------------------------------|----------------------------------------------------------------|
-| **Mango-Utils** | Free, open-source collection of lightweight Java utility classes | [Mango-Utils](https://github.com/RedStoneMango/Mango-Utils)    |
-| **Mangrypt**  | Encryption application to protect sensitive user data   | _Temporarily down due to security issues_                      |
+| **Mango-Utils** | Free, open-source collection of lightweight Java utility classes | <a href="https://github.com/RedStoneMango/Mango-Utils" target="_blank" rel="noopener noreferrer">Mango-Utils</a> |
+| **Mangrypt**  | Encryption application to protect sensitive user data   | <a href="https://github.com/RedStoneMango/Mangrypt" target="_blank" rel="noopener noreferrer">Mangrypt</a> |
 
 ---
 
@@ -57,10 +57,8 @@ I’m not shy about over-engineering projects for the fun of it, even if I don�
 
 My motivation is always the end result. Even when debugging bugs or frustrating issues, I remind myself why I’m building something and keep pushing—_pun intended_.
 
-I constantly strive to learn new ways to solve problems. Sometimes I look back at code I wrote just weeks ago and wonder how I solved certain problems so oddly! This is because I’m always evolving my thinking, often inspired by conversations with developers from different languages and backgrounds.  
-
-One quote that inspires me is from Socrates:  
-> *"He who thinks he is something has ceased to become anything."*  
+I constantly strive to learn new ways to solve problems. Sometimes I look back at code I wrote just weeks ago and wonder how I solved certain problems so oddly! This is because I’m always evolving my thinking, often inspired by conversations with developers from different languages and backgrounds. One quote that nicely summarizes this is from Socrates:
+> *"He who thinks he is something has ceased to become anything."*
 
 It reminds me to stay humble, keep improving, and always question my old solutions.
 
