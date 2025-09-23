@@ -32,8 +32,8 @@ I maintain and tinker with a range of small to mid-sized projects. Most of them 
 
 | Project       | Info                                                    | Repository                                                     |
 |---------------|---------------------------------------------------------|----------------------------------------------------------------|
-| **Mango-Utils** | Free, open-source collection of lightweight Java utility classes | <a href="https://github.com/RedStoneMango/Mango-Utils" target="_blank" rel="noopener noreferrer">Mango-Utils</a> |
-| **Mangrypt**  | Encryption application to protect sensitive user data   | <a href="https://github.com/RedStoneMango/MangoPlayer" target="_blank" rel="noopener noreferrer">MangoPlayer</a> |
+| **Mango-Utils** | Free, open-source collection of easy-to-use Java utility classes | <a href="https://github.com/RedStoneMango/Mango-Utils" target="_blank" rel="noopener noreferrer">Mango-Utils</a> |
+| **MangoPlayer**  | A lightweight music player with yt-dlp integration | <a href="https://github.com/RedStoneMango/MangoPlayer" target="_blank" rel="noopener noreferrer">MangoPlayer</a> |
 
 ---
 
