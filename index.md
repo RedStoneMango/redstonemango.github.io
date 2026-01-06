@@ -4,13 +4,13 @@ description: "Coding is like eating a mango: Sweet and satisfying — until you 
 layout: default
 ---
 
-# 🥭 Hi! I'm **RedStoneMango**
+# Hi! I'm **RedStoneMango**
 
  I am a German Java and Bash developer, Linux enthusiast, and occasional over-engineer of tiny tools. I enjoy building useful things from scratch and exploring the finer points of system scripting and application design.
 
 ---
 
-## 🛠️ What I Use
+## What I Use
 
 - **Languages**: Java, Bash  
 - **Build Tools**: Maven (sometimes Gradle)  
@@ -21,12 +21,12 @@ I work mostly in Linux environments and build both desktop applications and comm
 
 ---
 
-## 🧩 Projects
+## Projects
 
 I maintain and tinker with a range of small to mid-sized projects. Most of them fall into one of two categories:
 
-- 🖥️ Desktop applications  
-- 📜 Command-line tools  
+- Desktop applications  
+- Command-line tools  
 
 **Here, you can find my current long-term projects:**
 
@@ -37,7 +37,7 @@ I maintain and tinker with a range of small to mid-sized projects. Most of them 
 
 ---
 
-## 🧰 Toolbox
+## Toolbox
 
 I’m a big fan of JetBrains IDEs—especially **IntelliJ IDEA**—since I mainly develop in Java using Maven and Gradle.  
 
@@ -47,7 +47,7 @@ This combination helps me stay productive across both desktop applications and c
 
 ---
 
-## 💡 Development Philosophy
+## Development Philosophy
 
 My coding approach usually starts before I even write a line of code. I spend time thinking through the entire application while on the bus or train, so by the time I sit down to work, I already know about 90% of what I want to build.
 
@@ -64,7 +64,7 @@ It reminds me to stay humble, keep improving, and always question my old solutio
 
 ---
 
-## 💬 Want to Contribute or Reach Out?
+## Want to Contribute or Reach Out?
 
 If you'd like to get involved or have suggestions, feel free to submit a pull request or open an issue on one of my GitHub repositories. Collaboration and feedback are always welcome!
 
