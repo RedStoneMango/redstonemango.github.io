@@ -4,7 +4,7 @@ description: "Check out the list of my current long-term projects"
 projects:
   - name: "Mango Player"
     repo_name: "MangoPlayer"
-    description: "A user-friendly, platform-independent music player with yt-dlp integration"
+    description: "A user-friendly, platform-independent music player with yt-dlp integration to load music directly from YouTube"
   - name: "Mango Utils"
     repo_name: "Mango-Utils"
     description: "Free, open-source collection of easy-to-use Java utility classes, primarily developed for my personal use"
