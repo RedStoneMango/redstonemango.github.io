@@ -20,13 +20,14 @@
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% assign buttons = page.buttons | default: site.custom_buttons %}
       {% for button in buttons %}
-        <a href="{{ button.url | relative_url }}"
+        {% assign is_external = button.url contains '://' %}
+        <a
+          href="{{ button.url | relative_url }}"
           class="btn"
-          {% unless button.url contains site.url %}
-            {% unless button.url startswith "/" %}
-              target="_blank" rel="noopener"
-            {% endunless %}
-          {% endunless %}>
+          {% if is_external %}
+            target="_blank" rel="noopener"
+          {% endif %}
+        >
           {{ button.text }}
         </a>
       {% endfor %}
