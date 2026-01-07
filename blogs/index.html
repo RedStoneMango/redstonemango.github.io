@@ -7,29 +7,25 @@ buttons:
 layout: default
 ---
 
+<!-- We have to write some HTML here to nicely embed the list of blogs -->
+
 <h1>Blogs</h1>
 
 <ul class="blog-list">
   {% assign blogs = site.blogs | sort: "date" | reverse %}
   {% for blog in blogs %}
     <li class="blog-list-item">
-      <h2 class="blog-list-title">
-        <a href="{{ blog.url }}">{{ blog.title }}</a>
-      </h2>
+      <a href="{{ blog.url | relative_url }}" class="blog-tile-link">
+        <h2 class="blog-list-title">{{ blog.title }}</h2>
 
-      {% if blog.date %}
-        <p class="blog-list-date">
-          {{ blog.date | date: "%B %-d, %Y" }}
-        </p>
-      {% endif %}
+        {% if blog.date %}
+          <p class="blog-list-date">{{ blog.date | date: "%B %-d, %Y" }}</p>
+        {% endif %}
 
-      {% if blog.description %}
-        <p class="blog-list-description">{{ blog.description }}</p>
-      {% else %}
-        <p class="blog-list-description">
-          {{ blog.excerpt | strip_html | truncate: 160 }}
-        </p>
-      {% endif %}
+        {% if blog.description %}
+          <p class="blog-list-description">{{ blog.description }}</p>
+        {% endif %}
+      </a>
     </li>
   {% endfor %}
 </ul>
