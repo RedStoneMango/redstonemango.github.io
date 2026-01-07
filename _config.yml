@@ -2,12 +2,6 @@ url: "https://redstonemango.github.io"
 theme: jekyll-theme-cayman
 description: "" # Explicitly nothing to avoid " | DESCRIPTION" in website title
 
-custom_buttons:
-  - text: Visit my GitHub
-    url: https://github.com/RedStoneMango
-  - text: View website source
-    url: https://github.com/RedStoneMango/redstonemango.github.io
-
 collections:
   blogs:
     output: true
