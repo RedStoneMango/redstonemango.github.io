@@ -45,13 +45,18 @@
         {% for project in page.projects %}
           {% assign url = 'https://github.com/RedStoneMango/' | append: project.repo_name %}
           <li class="tile-item">
-            <a href="{{ url }}" class="tile-link">
+            <a href="{{ url }}" target="_blank" rel="noopener" class="tile-link">
               <h2>{{ project.name }}</h2>
               <p>{{ project.description }}</p>
             </a>
           </li>
         {% endfor %}
       </ul>
+
+      <p>
+        For a complete list of all my public projects, have a look at my
+        <a href="https://github.com/RedStoneMango?tab=repositories" target="_blank" rel="noopener">GitHub repositories</a>
+      </p>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
