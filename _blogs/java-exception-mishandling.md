@@ -52,7 +52,7 @@ Compare these two mental models:
         var bytes = openFile(file).readBytes();
     }
     catch (IOException _) {
-        LOGGER.log("Ooops...");
+        LOGGER.error("Ooops...");
     }
     ```
   </details>
