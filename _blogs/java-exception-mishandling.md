@@ -30,7 +30,7 @@ Compare these two mental models:
   <details>
     <summary>Code</summary>
    
-    ```java
+    <pre><code class="language-java">
     var reader = openFile(file);
     if (reader == null) {
         LOGGER.error("Ooops...");
@@ -41,13 +41,13 @@ Compare these two mental models:
         LOGGER.error("Ooops...");
         return;
     }
-    ```
+    </code></pre>
   </details>
       
 - Assume everything works inside a <code>try</code> block and handle all failures in one place
   <details>
     <summary>Code</summary>
-   
+   {% raw %}
     ```java
     try {
         var bytes = openFile(file).readBytes();
@@ -56,6 +56,7 @@ Compare these two mental models:
         LOGGER.log("Ooops...");
     }
     ```
+    {% endraw %}
   </details>
 
 The second approach is not just shorter — it’s easier to reason about.
