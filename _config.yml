@@ -7,3 +7,8 @@ custom_buttons:
     url: https://github.com/RedStoneMango
   - text: View website source
     url: https://github.com/RedStoneMango/redstonemango.github.io
+
+collections:
+  blogs:
+    output: true
+    permalink: /blogs/:name/

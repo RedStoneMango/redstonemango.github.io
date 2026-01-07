@@ -1,0 +1,40 @@
+---
+---
+
+@import "jekyll-theme-cayman";
+
+
+.blog-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-list-item {
+  margin-bottom: 2rem;
+}
+
+.blog-list-title {
+  margin-bottom: 0.25rem;
+}
+
+.blog-list-date {
+  margin: 0;
+  color: #6a737d;
+  font-size: 0.9em;
+}
+
+.blog-list-description {
+  margin-top: 0.5rem;
+}
+
+/* Blog post styles */
+
+.blog-post {
+  max-width: 800px;
+}
+
+.blog-meta {
+  color: #6a737d;
+  font-size: 0.9em;
+  margin-bottom: 1.5rem;
+}
