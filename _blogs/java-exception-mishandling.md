@@ -27,10 +27,10 @@ This also massively reduces boilerplate.
 Compare these two mental models:
 
 - Open a file, check return value, log something, read the file, check return value, log something again
-  <details>
+  <details markdown="1">
     <summary>Code</summary>
-   
-    <pre><code class="language-java">
+  
+    ```java
     var reader = openFile(file);
     if (reader == null) {
         LOGGER.error("Ooops...");
@@ -41,13 +41,12 @@ Compare these two mental models:
         LOGGER.error("Ooops...");
         return;
     }
-    </code></pre>
+    ```
   </details>
       
 - Assume everything works inside a <code>try</code> block and handle all failures in one place
-  <details>
+  <details markdown="1">
     <summary>Code</summary>
-   {% raw %}
     ```java
     try {
         var bytes = openFile(file).readBytes();
@@ -56,7 +55,6 @@ Compare these two mental models:
         LOGGER.log("Ooops...");
     }
     ```
-    {% endraw %}
   </details>
 
 The second approach is not just shorter — it’s easier to reason about.
