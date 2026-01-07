@@ -43,7 +43,7 @@
 
       <ul class="tile-list">
         {% for project in page.projects %}
-          {% assign url = 'https://github.com/RedStoneMango/' | append: project.repo_name }
+          {% assign url = 'https://github.com/RedStoneMango/' | append: project.repo_name %}
           <li class="tile-item">
             <a href="{{ url }}" class="tile-link">
               <h2>{{ project.name }}</h2>
