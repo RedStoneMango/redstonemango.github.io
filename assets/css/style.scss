@@ -5,7 +5,7 @@
 
 
 /*
-  ---  HOME PAGE TILES ---
+  --- HOME PAGE TILES ---
 */
 .tile-list {
   list-style: none;
@@ -109,4 +109,44 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+/*
+  --- DETAILS/SUMMARY PANE --- 
+*/
+details {
+  background-color: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  padding: 0.75em 1em;
+  margin: 1em 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+  padding-left: 1.5em;
+  color: #0366d6;
+}
+
+summary::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  transition: transform 0.2s ease;
+  color: #0366d6;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details > *:not(summary) {
+  margin-top: 0.5em;
+  color: #333;
+  line-height: 1.6;
 }
