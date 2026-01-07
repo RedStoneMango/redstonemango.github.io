@@ -22,9 +22,12 @@
       {% for button in buttons %}
         {% assign url = button.url | strip %}
         {% assign is_external = false %}
-        {% if url contains '://' and url contains site.url == false %}
-          {% assign is_external = true %}
+        {% if url contains '://' %}
+          {% unless url contains site.url %}
+            {% assign is_external = true %}
+          {% endunless %}
         {% endif %}
+
         <a href="{{ url | absolute_url }}"
           class="btn"
           {% if is_external %}target="_blank" rel="noopener"{% endif %}>

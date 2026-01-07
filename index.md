@@ -2,7 +2,7 @@
 title: RedStoneMango
 description: "Welcome to my Homepage"
 buttons:
-  - text: GitHub
+  - text: "Visit Me On GitHub"
     url: "https://github.com/RedStoneMango"
 ---
 

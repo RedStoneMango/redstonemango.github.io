@@ -1,11 +1,11 @@
 ---
 title: About Me
-description: "Who am I?"
+description: "Allow me to introduce myself..."
 layout: default
 buttons:
-  - text: Home
+  - text: "Back To Home"
     url: /
-  - text: GitHub
+  - text: "Visit Me On GitHub"
     url: "https://github.com/RedStoneMango"
 ---
 
