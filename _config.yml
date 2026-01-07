@@ -6,3 +6,9 @@ collections:
   blogs:
     output: true
     permalink: /blogs/:name/
+
+buttons:
+  - text: "Back To Home"
+    url: /
+  - text: "Visit Me On GitHub"
+    url: "https://github.com/RedStoneMango"

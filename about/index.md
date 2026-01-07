@@ -1,12 +1,7 @@
 ---
 title: About Me
-description: "Allow me to introduce myself..."
+description: "Learn more about me and my journey as a developer"
 layout: default
-buttons:
-  - text: "Back To Home"
-    url: /
-  - text: "Visit Me On GitHub"
-    url: "https://github.com/RedStoneMango"
 ---
 
 # Hi! I'm **RedStoneMango**
