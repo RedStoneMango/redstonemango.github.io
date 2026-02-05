@@ -17,4 +17,4 @@ https://redstonemango.github.io
 
 ## License
 
-Open source under the [MIT License](LICENSE).
+Open source under the [MIT License](LICENSE)
