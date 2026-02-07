@@ -148,7 +148,48 @@ List<User>; users = jdbcTemplate.query(
 
 No try-catch, no `RuntimeException` wrapping, and the stack trace remains clean.
 If something truly goes wrong, the exception still contains
-all the original information — but the caller isn’t burdened with boilerplate. 
+all the original information — but the caller isn’t burdened with boilerplate.
+
+## The thing with method design
+
+Using unchecked exceptions for irrecoverable error and checked exceptions for recoverable ones definitely is a good idea but in practice, the difference between these two scenarios often depends on the caller's context and cannot be reliably predicted when writing the method. Let's again have a look at a real-world example:
+
+JavaFX, a popular framework for writing modern desktop applications, allows programmers to store nodes and layout hierarchies inside an XML-based `.fxml` file format which can be parsed to a Java object at runtime using the `FXMLLoader` class.
+
+Purposely, this class supports loading `fxml` data from a URL, allowing the caller to dynamically load a document tree from the web, local files, etc. If accessing the URL fails, a checked `IOException` is thrown.
+
+Even though this makes sense when actually loading files from the filesystem, in most use cases the `fxml` file will be bundled in the application JAR. In these cases, the caller can always assume that the file will be accessible which leads to most developers writing the cassic `catch (Exception e) { throw new RuntimeException(e); }`.
+
+## Start writing unchecked wrapper methods
+
+So what can you do to provide an API that can handle both cases - depending on the caller's context?
+The answer is actually something, we've already seen with Java Swing: A simple unchecked wrapper.
+
+When writing your code, work with checked exceptions and expose this method to the caller. Then, add a wrapper method that internally uses a `try-catch` and throws an unchecked exception to support for cases where a caller can be sure that the action won't fail (for example because of guard clauses on the caller's side).
+
+With our FXMLLoader example, the implementation would look something like this:
+
+```java
+// Checked base method for cases where the location might not point to an existing resource
+public <T> T load() throws IOException {
+    [...]
+}
+
+// Unchecked wrapper method for cases where the caller can be sure that the location points to an existing resource
+public <T> T loadUnchecked() throws RuntimeException {
+    try {
+        return load();
+    }
+    catch (IOException e) {
+        throw new RuntimeException(e);
+    }
+}
+```
+
+Even tough this effectively just moves the try-catch from the caller to the API itself, this approach has two major advantages:
+
+1. We do not burden the caller with boilerplate. This simple refactor already improves the readability and flow of the caller's source code.
+2. We provide a simple way to indicate the intention of the code. By explicitly calling the `loadUnchecked` method, the caller shows that it expects the execution to work without any problems, improving the way a reader understands how the logic is supposed to work.
 
 ## So… Is Java’s Exception System Bad?
 
@@ -165,5 +206,5 @@ It’s because someone, somewhere, chose the wrong kind of exception
 and made it everyone else’s problem.
 
 So if your stack traces are messy, don’t blame Java.
-Blame whoever thought `catch (Exception e) { throw new RuntimeException(e); }` was a good idea. 
+Blame whoever wrote a library that makes unreasonable assumptions about your use case instead of actually supporting you and your code.
 And maybe… check yourself before you wreck yourself.
