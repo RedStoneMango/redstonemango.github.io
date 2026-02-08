@@ -191,6 +191,8 @@ Even tough this effectively just moves the try-catch from the caller to the API 
 1. We do not burden the caller with boilerplate. This simple refactor already improves the readability and flow of the caller's source code.
 2. We provide a simple way to indicate the intention of the code. By explicitly calling the `loadUnchecked` method, the caller shows that it expects the execution to work without any problems, improving the way a reader understands how the logic is supposed to work.
 
+Of course, this design pattern is not applicable in every scenario: Sometimes the code is just pretty much needed to throw checked exceptions and in these cases, I do not think that the described approach makes much sense. Still, there definitely are cases in which a bit more flexibility in method design choises can make a huge difference and you should at least think about whether some unchecked wrapping is able to help you out.
+
 ## So… Is Java’s Exception System Bad?
 
 In my opinion: no. Java has a solid, well-thought-out exception system.
