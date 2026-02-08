@@ -170,12 +170,16 @@ When writing your code, work with checked exceptions and expose this method to t
 With our FXMLLoader example, the implementation would look something like this:
 
 ```java
-// Checked base method for cases where the location might not point to an existing resource
+// Checked base method for cases where the
+// location might not point to an
+// existing resource
 public <T> T load() throws IOException {
     [...]
 }
 
-// Unchecked wrapper method for cases where the caller can be sure that the location points to an existing resource
+// Unchecked wrapper method for cases where the
+// caller can be sure that the location points
+// to an existing resource
 public <T> T loadUnchecked() throws RuntimeException {
     try {
         return load();
