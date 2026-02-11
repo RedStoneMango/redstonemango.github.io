@@ -36,7 +36,7 @@ Compare these two mental models:
         LOGGER.error("Ooops...");
         return;
     }
-    var bytes = readerOptional.get().readBytes();
+    var bytes = reader.readBytes();
     if (bytes == null) {
         LOGGER.error("Ooops...");
         return;
