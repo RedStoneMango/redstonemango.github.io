@@ -8,12 +8,12 @@ The life site is available at:
 
 https://redstonemango.github.io
 
-## Features
+## Content
 
-- Static site using GitHub Pages
-- Styled with the Cayman theme for a clean, minimalist look
-- Introduction of myself with some tech stats
-- List of current long-term projects
+- Index page
+- Some blogs containing tutorials, my thoughts on certain programming-related topics and other posts
+- About page with some general information about me
+- Projects page featuring quick links to my current long-term projects
 
 ## License
 
