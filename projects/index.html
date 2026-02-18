@@ -6,29 +6,125 @@ layout: default
 
 <h2>Pinned</h2>
 
-<ul class="tile-grid">
-  <li class="tile-item">
-    <a href="/blogs" class="tile-link">
-      <h2>Title</h2>
-      <p class="tile-meta">
-        Language
-      </p>
-      <p>Description</p>
-    </a>
-  </li>
+<ul class="tile-grid" id="pinned-repos">
+  <li><i>Loading...</i></li>
 </ul>
 
 
 <h2>All Projects</h2>
 
-<ul class="tile-grid list-layout">
-  <li class="tile-item">
-    <a href="/blogs" class="tile-link">
-      <h2>Title</h2>
-      <p class="tile-meta">
-        Language
-      </p>
-      <p>Description</p>
-    </a>
-  </li>
+<ul class="tile-grid list-layout" id="all-repos">
+  <li><i>Loading...</i></li>
 </ul>
+
+<script>
+  const pinnedReposList = document.getElementById("pinned-repos");
+
+  fetch("https://pinned.berrysauce.dev/get/RedStoneMango").then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    pinnedReposList.innerHTML = "";
+    return response.json();
+  })
+  .then(repos => {
+    repos.forEach(repo => {
+      const li = document.createElement("li");
+      li.className = "tile-item";
+
+      const link = document.createElement("a");
+      link.className = "tile-link";
+      link.href = "https://github.com/RedStoneMango/" + repo.name;
+      link.target = "_blank";
+
+      const title = document.createElement("h2");
+      title.textContent = repo.name;
+
+      const meta = document.createElement("div");
+      meta.className = "tile-meta";
+      meta.textContent = repo.language || "No language specified";
+
+      const description = document.createElement("p");
+      description.textContent = repo.description || "No description available.";
+
+      link.appendChild(title);
+      link.appendChild(meta);
+      link.appendChild(description);
+      li.appendChild(link);
+
+      pinnedReposList.appendChild(li);
+    });
+  })
+  .catch(error => {
+    console.error("Error fetching repos:", error);
+    pinnedReposList.innerHTML = "";
+
+    const li = document.createElement("li");
+    li.textContent = "An error occurred while fetching the repositories. Please have a look at ";
+
+    const link = document.createElement("a");
+    link.href = "https://github.com/RedStoneMango?tab=repositories";
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "GitHub";
+
+    li.appendChild(link);
+    li.appendChild(document.createTextNode(" for the list."));
+    pinnedReposList.appendChild(li);
+  });
+
+  const allReposList = document.getElementById("all-repos");
+
+  fetch("https://api.github.com/users/RedStoneMango/repos").then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    allReposList.innerHTML = "";
+    return response.json();
+  })
+  .then(repos => {
+    repos.forEach(repo => {
+      const li = document.createElement("li");
+      li.className = "tile-item";
+
+      const link = document.createElement("a");
+      link.className = "tile-link";
+      link.href = repo.html_url;
+      link.target = "_blank";
+
+      const title = document.createElement("h2");
+      title.textContent = repo.name;
+
+      const meta = document.createElement("div");
+      meta.className = "tile-meta";
+      meta.textContent = repo.language || "No language specified";
+
+      const description = document.createElement("p");
+      description.textContent = repo.description || "No description available.";
+
+      link.appendChild(title);
+      link.appendChild(meta);
+      link.appendChild(description);
+      li.appendChild(link);
+
+      allReposList.appendChild(li);
+    });
+  })
+  .catch(error => {
+    console.error("Error fetching repos:", error);
+    allReposList.innerHTML = "";
+
+    const li = document.createElement("li");
+    li.textContent = "An error occurred while fetching the repositories. Please have a look at ";
+
+    const link = document.createElement("a");
+    link.href = "https://github.com/RedStoneMango?tab=repositories";
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "GitHub";
+
+    li.appendChild(link);
+    li.appendChild(document.createTextNode(" for the list."));
+    allReposList.appendChild(li);
+  });
+</script>
