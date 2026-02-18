@@ -12,7 +12,7 @@ This is my humble website where I showcase projects and occasionally post about 
 
 Feel free to have a look at the following pages:
 
-<ul class="tile-list">
+<ul class="tile-grid">
   <li class="tile-item">
     <a href="/blogs" class="tile-link">
       <h2>Blogs</h2>
