@@ -22,7 +22,7 @@ Feel free to have a look at the following pages:
   <li class="tile-item">
     <a href="/projects" class="tile-link">
       <h2>Projects</h2>
-      <p>Check out the list of my current long-term projects.</p>
+      <p>Check out the list of my available GitHub projects.</p>
     </a>
   </li>
   <li class="tile-item">
