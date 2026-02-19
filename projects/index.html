@@ -83,6 +83,12 @@ layout: default
     return response.json();
   })
   .then(repos => {
+    repos.sort((a, b) => {
+      return new Date(b.updated_at) - new Date(a.updated_at);
+    });
+    return repos;
+  })
+  .then(repos => {
     repos.forEach(repo => {
       const li = document.createElement("li");
       li.className = "tile-item";
