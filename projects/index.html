@@ -107,6 +107,9 @@ layout: default
       const meta = document.createElement("div");
       meta.className = "tile-meta";
       meta.textContent = repo.language || "No language specified";
+      if (repo.fork) {
+        meta.textContent += " - Forked"
+      }
 
       const description = document.createElement("div");
       description.textContent = repo.description || "No description available.";
