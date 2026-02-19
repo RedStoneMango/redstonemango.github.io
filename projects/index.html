@@ -99,11 +99,14 @@ layout: default
       meta.className = "tile-meta";
       meta.textContent = repo.language || "No language specified";
 
-      const description = document.createElement("p");
+      const description = document.createElement("div");
       description.textContent = repo.description || "No description available.";
 
-      link.appendChild(title);
-      link.appendChild(meta);
+      const header = document.createElement("div");
+      header.appendChild(title);
+      header.appendChild(meta);
+
+      link.appendChild(header);
       link.appendChild(description);
       li.appendChild(link);
 

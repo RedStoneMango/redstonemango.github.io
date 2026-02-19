@@ -80,6 +80,7 @@
 .tile-grid.list-layout .tile-link h2 {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
+  display: inline-block;
 }
 
 .tile-grid.list-layout .tile-link p {
@@ -89,6 +90,8 @@
 
 .tile-grid.list-layout .tile-meta {
   margin-bottom: 0.25rem;
+  display: inline-block;
+  margin-left: 0.5rem;
   font-size: 0.7em;
 }
 
