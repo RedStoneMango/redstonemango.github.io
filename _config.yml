@@ -1,6 +1,7 @@
 url: "https://redstonemango.github.io"
 theme: jekyll-theme-cayman
 description: "" # Explicitly nothing to avoid " | DESCRIPTION" in website title
+year: "2026"
 
 collections:
   blogs:
