@@ -16,7 +16,7 @@ I am a German Java developer, and occasional over-engineer of tiny tools. I enjo
 - **Build Tools**: Maven, Gradle
 - **IDEs**: IntelliJ IDEA, VS Code
 - **Frameworks**: Java AWT / Swing, JavaFX
-- **OS**: Fedora Linux
+- **OS**: OpenSUSE Tumbleweed (Linux)
 
 I work mostly in Linux environments and build both desktop applications and command-line utilities.
 
