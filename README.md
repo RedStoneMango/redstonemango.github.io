@@ -4,7 +4,7 @@ This repository hosts a small static homepage for **RedStoneMango** using GitHub
 
 ## About
 
-The life site is available at:
+The live site is available at:
 
 https://redstonemango.github.io
 
