@@ -2,7 +2,7 @@
 title: "Tutorial on Object Oriented Programming and Inheritance (Java)"
 description: "Finally a good tutorial on OOP and its implementation in Java"
 layout: blog
-date: 2026-03-28
+date: 2026-04-04
 ---
 
 I've seen a couple of online tutorials regarding this topic on various platforms. However, to me most of these tutorials did not do a good job at explaining the core idea behind object orientation and inheritance: Maybe its nice to know how to have something called **Dog** print "woof" but especially when learning to code, you might look for an example with more connection to actual use cases.
@@ -11,6 +11,7 @@ So I decided to write my own tutorial on this topic - Enjoy!
 
 ---
 
+## _This tutorial is not yet completed_
 
 ## Introduction
 
@@ -372,6 +373,10 @@ public class User {
 }
 ```
 
-Keep in mind, that calling another constructor has to be the first action to be executed inside a constructor sice you have to create an instance before being able to use it.
+Keep in mind, that calling another constructor has to be the first action to be executed inside a constructor sice you have to create an instance before being able to use it. Also, you can only delegate to max 1 other constructor.
 
-Since _Java 25_, **Flexible Constructor Bodies** allow you
+> Since _Java 25_, **Flexible Constructor Bodies** allow you to perform some operations before delegating to another constructor. However, you cannot expose instance-dependent values before the instance was created. ([Learn more](https://docs.oracle.com/en/java/javase/25/language/flexible-constructor-bodies.html))
+
+
+
+## _To Be Continued_
