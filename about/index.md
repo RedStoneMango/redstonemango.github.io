@@ -14,21 +14,17 @@ I am a German Java developer, and occasional over-engineer of tiny tools. I enjo
 
 - **Languages**: Java, CSS, Python, Bash
 - **Build Tools**: Maven, Gradle
-- **IDEs**: IntelliJ IDEA, VS Code
+- **IDEs**: IntelliJ IDEA + ideavim
 - **Frameworks**: Java AWT / Swing, JavaFX
 - **OS**: OpenSUSE Tumbleweed (Linux)
-
-I work mostly in Linux environments and build both desktop applications and command-line utilities.
 
 ---
 
 ## Toolbox
 
-I’m a big fan of JetBrains IDEs—especially **IntelliJ IDEA**—since I mainly develop in Java using Maven and Gradle.  
+I’m using Jetbrains **IntelliJ IDEA**, trimmed down to a minimal layout, while enabling IDEA vim motions and embedding the [lazygit](https://github.com/jesseduffield/lazygit) application.
 
-As a Fedora Linux user, I’m also deeply into Bash scripting, and for that I often use **VS Code** due to its flexibility and lightweight nature.
-
-This combination helps me stay productive across both desktop applications and command-line tools.
+This way, I can combine the fast vim-style text editing and movement with powerful IDE code analysis tools to suit my workflows in the best way possible.
 
 ---
 
